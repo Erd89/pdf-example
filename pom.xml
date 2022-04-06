@@ -24,8 +24,8 @@
         <poi-ooxml.version>5.2.2</poi-ooxml.version>
         <thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
         <flying-saucer-pdf.version>9.1.22</flying-saucer-pdf.version>
-        <open-html-pdfbox.version>1.0.6</open-html-pdfbox.version>
-        <open-html-pdf-core.version>1.0.6</open-html-pdf-core.version>
+        <open-html-pdfbox.version>1.0.10</open-html-pdfbox.version>
+        <open-html-pdf-core.version>1.0.10</open-html-pdf-core.version>
         <flying-saucer-pdf-openpdf.version>9.1.22</flying-saucer-pdf-openpdf.version>
         <jsoup.version>1.14.2</jsoup.version>
         <!--        <maven.compiler.source>17</maven.compiler.source>-->
