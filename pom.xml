@@ -17,12 +17,11 @@
         <java.version>17</java.version>
         <pdfbox-tools.version>2.0.25</pdfbox-tools.version>
         <itextpdf.version>5.5.13.3</itextpdf.version>
-<!--        <batik-transcoder.version>1.14</batik-transcoder.version>-->
-        <poi-ooxml.version>5.2.2</poi-ooxml.version>
+<!--        <poi-ooxml.version>5.2.2</poi-ooxml.version>-->
         <flying-saucer-pdf.version>9.1.22</flying-saucer-pdf.version>
+        <flying-saucer-pdf-openpdf.version>9.1.22</flying-saucer-pdf-openpdf.version>
         <open-html-pdfbox.version>1.0.10</open-html-pdfbox.version>
         <open-html-pdf-core.version>1.0.10</open-html-pdf-core.version>
-        <flying-saucer-pdf-openpdf.version>9.1.22</flying-saucer-pdf-openpdf.version>
         <jsoup.version>1.14.3</jsoup.version>
     </properties>
 
@@ -57,16 +56,10 @@
         </dependency>
 
 <!--        <dependency>-->
-<!--            <groupId>org.apache.xmlgraphics</groupId>-->
-<!--            <artifactId>batik-transcoder</artifactId>-->
-<!--            <version>${batik-transcoder.version}</version>-->
+<!--            <groupId>org.apache.poi</groupId>-->
+<!--            <artifactId>poi-ooxml</artifactId>-->
+<!--            <version>${poi-ooxml.version}</version>-->
 <!--        </dependency>-->
-
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>${poi-ooxml.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.thymeleaf</groupId>
@@ -122,16 +115,10 @@
         </dependency>
 
 <!--        <dependency>-->
-<!--            <groupId>org.apache.xmlgraphics</groupId>-->
-<!--            <artifactId>batik-transcoder</artifactId>-->
-<!--            <version>${batik-transcoder.version}</version>-->
+<!--            <groupId>org.apache.poi</groupId>-->
+<!--            <artifactId>poi-ooxml</artifactId>-->
+<!--            <version>${poi-ooxml.version}</version>-->
 <!--        </dependency>-->
-
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>${poi-ooxml.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.thymeleaf</groupId>
