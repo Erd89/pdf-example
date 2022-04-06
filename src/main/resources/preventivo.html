@@ -5,134 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>preventivo</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
-        body {
-            width: 210mm;
-            height: 296mm;
-            color: #282828;
-        }
-        @page {
-            margin: 0;
-        }
+      @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+      body {
+        width: 210mm;
+        height: 296mm;
+        color: #282828;
+      }
+      @page {
+        margin: 0;
+      }
 
-        html,
-        body {
-            -webkit-print-color-adjust: exact;
-            color-adjust: exact;
-            background-color: #e5e5e5;
-            font-family: 'Karla', sans-serif;
-            line-height: 14px;
-            font-weight: 400 !important;
-        }
-        .mx-auto {
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
-        .container {
-            background-color: rgb(255, 255, 255);
-        }
+      html,
+      body {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+        background-color: #e5e5e5;
+        font-family: 'Karla', sans-serif;
+        line-height: 14px;
+        font-weight: 400 !important;
+      }
+      .mx-auto {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .container {
+        background-color: rgb(255, 255, 255);
+      }
 
-        .grid {
-            display: grid !important;
-        }
-        .grid-rows-1 {
-            grid-template-rows: repeat(1, minmax(0, 1fr)) !important;
-        }
+      .grid {
+        display: block !important;
+      }
 
-        .grid-cols-2 {
-            grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        }
+      .grid-cols-2 {
+        grid-template-columns: 1fr 1fr !important;
+      }
 
-        .gap-4 {
-            gap: 1rem /* 16px */ !important;
-        }
-        .p-6 {
-            padding: 1.5rem /* 24px */ !important;
-        }
-        .text-sm {
-            font-size: 0.875rem /* 14px */ !important;
-            line-height: 1.25rem /* 20px */ !important;
-        }
-        .font-bold {
-            font-weight: 700 !important;
-        }
-        .text-base {
-            font-size: 1rem /* 16px */ !important;
-            line-height: 1.5rem /* 24px */ !important;
-        }
+      .gap-4 {
+        gap: 1rem /* 16px */ !important;
+      }
+      .p-6 {
+        padding: 1.5rem /* 24px */ !important;
+      }
+      .text-sm {
+        font-size: 0.875rem /* 14px */ !important;
+        line-height: 1.25rem /* 20px */ !important;
+      }
+      .font-bold {
+        font-weight: 700 !important;
+      }
+      .text-base {
+        font-size: 1rem /* 16px */ !important;
+        line-height: 1.5rem /* 24px */ !important;
+      }
 
-        .mt-20 {
-            margin-top: 5rem /* 80px */ !important;
-        }
+      .mt-20 {
+        margin-top: 5rem /* 80px */ !important;
+      }
 
-        .text-right {
-            text-align: right !important;
-        }
+      .text-right {
+        text-align: right !important;
+      }
 
-        .table-auto {
-            table-layout: auto !important;
-        }
+      .table-auto {
+        table-layout: auto !important;
+      }
 
-        .w-full {
-            width: 100% !important;
-        }
-        .mt-3 {
-            margin-top: 0.75rem /* 12px */ !important;
-        }
+      .w-full {
+        width: 100% !important;
+      }
+      .mt-3 {
+        margin-top: 0.75rem /* 12px */ !important;
+      }
 
-        .text-left {
-            text-align: left !important;
-        }
+      .text-left {
+        text-align: left !important;
+      }
 
-        .rounded-lg {
-            border-radius: 0.5rem /* 8px */ !important;
-        }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        padding: 0;
+        margin: 0;
+      }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p {
-            padding: 0;
-            margin: 0;
-        }
+      thead {
+        color: white;
+      }
+      tbody {
+        color: #282828;
+      }
 
-        thead {
-            color: white;
-        }
-        tbody {
-            color: #282828;
-        }
+      thead th {
+        background: #545454;
+      }
 
-        thead th:first-child {
-            border-radius: 8px 0 0 8px;
-        }
-        thead th {
-            background: #545454;
-        }
-        thead th:last-child {
-            border-radius: 0 8px 8px 0;
-        }
-        th,
-        td {
-            padding: 15px;
-        }
-        table {
-            border-collapse: collapse;
-        }
-        .logo {
-            font-size: 32px;
-            color: blue;
-        }
+      th,
+      td {
+        padding: 20px;
+        border-bottom: 2px solid #ffffff;
+      }
+
+      td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 180px;
+      }
+
+      tr {
+        background: #f3f3f3;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+      .logo {
+        font-size: 32px;
+        color: blue;
+        text-transform: uppercase;
+        display: inline-block;
+      }
+      .float-right {
+        float: right;
+      }
+      .inline-block {
+        display: inline-block;
+      }
     </style>
 </head>
 <body class="text-sm">
 <div class="container p-6">
-    <div class="grid grid-rows-1 grid-cols-2 gap-4">
-        <div class="logo">LOGO</div>
-        <div>
+    <div class="grid grid-cols-2 gap-4">
+        <div class="logo">
+            <img src="https://dummyimage.com/100x105/034f96/ffffff.png&text=logo" alt="logo" />
+        </div>
+        <div class="float-right">
             <h2 class="font-bold text-base">Maggioli Spa</h2>
             <p>Via del Carpino, 8, Santarcangelo di Romagna (RN) - Italia</p>
             <p>P.IVA 02066400405</p>
@@ -140,8 +151,8 @@
             <p>www.maggiolispa.it - maggiolispa@maggioli.it</p>
         </div>
     </div>
-    <div class="grid grid-rows-1 grid-cols-2 gap-4 mt-20">
-        <div>
+    <div class="grid grid-cols-2 gap-4 mt-20">
+        <div class="inline-block" style="max-width: 322px">
             <h2 class="font-bold text-base">Destinatario</h2>
             <div>
                 <p>Sig. Luca Rossi</p>
@@ -151,8 +162,7 @@
                 <p>maggiolispa@maggioli.it</p>
             </div>
         </div>
-
-        <div>
+        <div class="float-right" style="width: 363px">
             <h2 class="font-bold text-base">Pagamento</h2>
             <p>Bonifico bancario</p>
             <p>Banca Nome della Banca</p>
@@ -160,15 +170,15 @@
             <p>BIC 03948493</p>
         </div>
     </div>
-    <div class="grid grid-rows-1 grid-cols-2 gap-4 mt-20">
-        <div>Preventivo <strong>#00000</strong></div>
+    <div class="grid grid-cols-2 gap-4" style="margin-top: 50px">
+        <div class="inline-block">Preventivo <strong>#00000</strong></div>
 
-        <div class="text-right"><strong>23/03/2022</strong></div>
+        <div class="float-right"><strong>23/03/2022</strong></div>
     </div>
 
     <table class="table-auto w-full mt-3">
         <thead class="">
-        <tr class="text-left rounded-lg">
+        <tr class="text-left">
             <th>Descrizione</th>
             <th>Costo</th>
             <th>Qtà</th>
@@ -180,76 +190,103 @@
         </thead>
         <tbody>
         <tr>
-            <td>Ristrutturazione porta Lorem ipsum dolor sit amet</td>
-            <td>900.000,00 €</td>
+            <td>Ristrutturazione porta Lorem</td>
+            <td>90.000,00</td>
             <td>1.000</td>
             <td>Minuti</td>
             <td>22 %</td>
             <td>100 %</td>
-            <td>900.000,00 €</td>
+            <td>90.000,00</td>
         </tr>
         <tr>
-            <td>Ristrutturazione porta Lorem ipsum dolor sit amet</td>
-            <td>900.000,00 €</td>
+            <td>Ristrutturazione porta Lorem</td>
+            <td>90.000,00</td>
             <td>1.000</td>
             <td>Minuti</td>
             <td>22 %</td>
             <td>100 %</td>
-            <td>900.000,00 €</td>
+            <td>90.000,00</td>
         </tr>
         <tr>
-            <td>Ristrutturazione porta Lorem ipsum dolor sit amet</td>
-            <td>900.000,00 €</td>
+            <td>Ristrutturazione porta Lorem</td>
+            <td>90.000,00</td>
             <td>1.000</td>
             <td>Minuti</td>
             <td>22 %</td>
             <td>100 %</td>
-            <td>900.000,00 €</td>
+            <td>90.000,00</td>
         </tr>
         <tr>
-            <td>Ristrutturazione porta Lorem ipsum dolor sit amet</td>
-            <td>900.000,00 €</td>
+            <td>Ristrutturazione porta Lorem</td>
+            <td>90.000,00</td>
             <td>1.000</td>
             <td>Minuti</td>
             <td>22 %</td>
             <td>100 %</td>
-            <td>900.000,00 €</td>
+            <td>90.000,00</td>
         </tr>
         <tr>
-            <td>Ristrutturazione porta Lorem ipsum dolor sit amet</td>
-            <td>900.000,00 €</td>
+            <td>Ristrutturazione porta Lorem</td>
+            <td>90.000,00</td>
             <td>1.000</td>
             <td>Minuti</td>
             <td>22 %</td>
             <td>100 %</td>
-            <td>900.000,00 €</td>
+            <td>90.000,00</td>
         </tr>
         <tr>
-            <td>Ristrutturazione porta Lorem ipsum dolor sit amet</td>
-            <td>900.000,00 €</td>
+            <td>Ristrutturazione porta Lorem</td>
+            <td>90.000,00</td>
             <td>1.000</td>
             <td>Minuti</td>
             <td>22 %</td>
             <td>100 %</td>
-            <td>900.000,00 €</td>
+            <td>90.000,00</td>
         </tr>
         <tr>
-            <td>Ristrutturazione porta Lorem ipsum dolor sit amet</td>
-            <td>900.000,00 €</td>
+            <td>Ristrutturazione porta Lorem</td>
+            <td>90.000,00</td>
             <td>1.000</td>
             <td>Minuti</td>
             <td>22 %</td>
             <td>100 %</td>
-            <td>900.000,00 €</td>
+            <td>90.000,00</td>
         </tr>
         <tr>
-            <td>Ristrutturazione porta Lorem ipsum dolor sit amet</td>
-            <td>900.000,00 €</td>
+            <td>Ristrutturazione porta Lorem</td>
+            <td>90.000,00</td>
             <td>1.000</td>
             <td>Minuti</td>
             <td>22 %</td>
             <td>100 %</td>
-            <td>900.000,00 €</td>
+            <td>90.000,00</td>
+        </tr>
+        <tr>
+            <td>Ristrutturazione porta Lorem</td>
+            <td>90.000,00</td>
+            <td>1.000</td>
+            <td>Minuti</td>
+            <td>22 %</td>
+            <td>100 %</td>
+            <td>90.000,00</td>
+        </tr>
+        <tr>
+            <td>Ristrutturazione porta Lorem</td>
+            <td>90.000,00</td>
+            <td>1.000</td>
+            <td>Minuti</td>
+            <td>22 %</td>
+            <td>100 %</td>
+            <td>90.000,00</td>
+        </tr>
+        <tr>
+            <td>Ristrutturazione porta Lorem</td>
+            <td>90.000,00</td>
+            <td>1.000</td>
+            <td>Minuti</td>
+            <td>22 %</td>
+            <td>100 %</td>
+            <td>90.000,00</td>
         </tr>
         </tbody>
     </table>
