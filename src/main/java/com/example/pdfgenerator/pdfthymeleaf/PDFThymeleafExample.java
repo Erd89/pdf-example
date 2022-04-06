@@ -1,6 +1,5 @@
 package com.example.pdfgenerator.pdfthymeleaf;
 
-import com.itextpdf.text.DocumentException;
 import com.openhtmltopdf.pdfboxout.PdfRendererBuilder;
 import org.jsoup.Jsoup;
 import org.jsoup.helper.W3CDom;
