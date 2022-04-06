@@ -16,7 +16,6 @@
     <properties>
         <java.version>17</java.version>
         <pdfbox-tools.version>2.0.25</pdfbox-tools.version>
-        <pdf2dom.version>2.0.1</pdf2dom.version>
         <itextpdf.version>5.5.13.3</itextpdf.version>
         <batik-transcoder.version>1.14</batik-transcoder.version>
         <poi-ooxml.version>5.2.2</poi-ooxml.version>
@@ -43,18 +42,6 @@
             <groupId>org.apache.pdfbox</groupId>
             <artifactId>pdfbox-tools</artifactId>
             <version>${pdfbox-tools.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>commons-logging</artifactId>
-                    <groupId>commons-logging</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>net.sf.cssbox</groupId>
-            <artifactId>pdf2dom</artifactId>
-            <version>${pdf2dom.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>commons-logging</artifactId>
@@ -120,18 +107,6 @@
             <groupId>org.apache.pdfbox</groupId>
             <artifactId>pdfbox-tools</artifactId>
             <version>${pdfbox-tools.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>commons-logging</artifactId>
-                    <groupId>commons-logging</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>net.sf.cssbox</groupId>
-            <artifactId>pdf2dom</artifactId>
-            <version>${pdf2dom.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>commons-logging</artifactId>
