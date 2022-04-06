@@ -17,7 +17,6 @@
         <java.version>17</java.version>
         <pdfbox-tools.version>2.0.25</pdfbox-tools.version>
         <itextpdf.version>5.5.13.3</itextpdf.version>
-<!--        <poi-ooxml.version>5.2.2</poi-ooxml.version>-->
         <flying-saucer-pdf.version>9.1.22</flying-saucer-pdf.version>
         <flying-saucer-pdf-openpdf.version>9.1.22</flying-saucer-pdf-openpdf.version>
         <open-html-pdfbox.version>1.0.10</open-html-pdfbox.version>
@@ -54,12 +53,6 @@
             <artifactId>itextpdf</artifactId>
             <version>${itextpdf.version}</version>
         </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>org.apache.poi</groupId>-->
-<!--            <artifactId>poi-ooxml</artifactId>-->
-<!--            <version>${poi-ooxml.version}</version>-->
-<!--        </dependency>-->
 
         <dependency>
             <groupId>org.thymeleaf</groupId>
@@ -113,12 +106,6 @@
             <artifactId>itextpdf</artifactId>
             <version>${itextpdf.version}</version>
         </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>org.apache.poi</groupId>-->
-<!--            <artifactId>poi-ooxml</artifactId>-->
-<!--            <version>${poi-ooxml.version}</version>-->
-<!--        </dependency>-->
 
         <dependency>
             <groupId>org.thymeleaf</groupId>
