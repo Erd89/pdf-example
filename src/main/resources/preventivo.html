@@ -8,7 +8,7 @@
       @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
       body {
         width: 210mm;
-        height: 296mm;
+
         color: #282828;
       }
       @page {
@@ -23,6 +23,7 @@
         font-family: 'Karla', sans-serif;
         line-height: 14px;
         font-weight: 400;
+        margin: 0;
       }
 
       .container {
@@ -78,37 +79,6 @@
         margin: 0;
       }
 
-      thead {
-        color: white;
-      }
-      tbody {
-        color: #282828;
-      }
-
-      thead th {
-        background: #545454;
-      }
-
-      th,
-      td {
-        padding: 20px;
-        border-bottom: 2px solid #ffffff;
-      }
-
-      td {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        max-width: 180px;
-      }
-
-      tr {
-        background: #f3f3f3;
-      }
-
-      table {
-        border-collapse: collapse;
-      }
       .logo {
         font-size: 32px;
         color: blue;
@@ -120,6 +90,54 @@
       }
       .inline-block {
         display: inline-block;
+      }
+
+      .top-table {
+        background: #f3f3f3;
+        border-collapse: collapse;
+      }
+
+      .top-table thead {
+        color: white;
+      }
+      .top-table tbody {
+        color: #282828;
+      }
+
+      .top-table thead th {
+        background: #545454;
+      }
+
+      .top-table th,
+      .top-table td {
+        padding: 20px;
+        /*  border-bottom: 2px solid #ffffff; */
+      }
+
+      .top-table td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 180px;
+      }
+
+      .top-table tr {
+        background: #f3f3f3;
+      }
+
+      table.total-price {
+        border-collapse: collapse;
+      }
+
+      .total-price {
+        padding: 10px 10px;
+        background: #f3f3f3;
+        font-weight: 700;
+        display: inline-block;
+      }
+
+      .total-price td {
+        padding-right: 15px;
       }
     </style>
 </head>
@@ -138,7 +156,7 @@
         </div>
     </div>
     <div class="mt-20">
-        <div class="inline-block" style="max-width: 322px">
+        <div class="inline-block" style="max-width: 822px">
             <h2 class="font-bold text-base">Destinatario</h2>
             <div>
                 <p>Sig. Luca Rossi</p>
@@ -162,7 +180,7 @@
         <div class="float-right"><strong>23/03/2022</strong></div>
     </div>
 
-    <table class="table-auto w-full mt-3">
+    <table class="top-table table-auto w-full mt-3">
         <thead class="">
         <tr class="text-left">
             <th>Descrizione</th>
@@ -220,51 +238,7 @@
             <td>100 %</td>
             <td>90.000,00</td>
         </tr>
-        <tr>
-            <td>Ristrutturazione porta Lorem</td>
-            <td>90.000,00</td>
-            <td>1.000</td>
-            <td>Minuti</td>
-            <td>22 %</td>
-            <td>100 %</td>
-            <td>90.000,00</td>
-        </tr>
-        <tr>
-            <td>Ristrutturazione porta Lorem</td>
-            <td>90.000,00</td>
-            <td>1.000</td>
-            <td>Minuti</td>
-            <td>22 %</td>
-            <td>100 %</td>
-            <td>90.000,00</td>
-        </tr>
-        <tr>
-            <td>Ristrutturazione porta Lorem</td>
-            <td>90.000,00</td>
-            <td>1.000</td>
-            <td>Minuti</td>
-            <td>22 %</td>
-            <td>100 %</td>
-            <td>90.000,00</td>
-        </tr>
-        <tr>
-            <td>Ristrutturazione porta Lorem</td>
-            <td>90.000,00</td>
-            <td>1.000</td>
-            <td>Minuti</td>
-            <td>22 %</td>
-            <td>100 %</td>
-            <td>90.000,00</td>
-        </tr>
-        <tr>
-            <td>Ristrutturazione porta Lorem</td>
-            <td>90.000,00</td>
-            <td>1.000</td>
-            <td>Minuti</td>
-            <td>22 %</td>
-            <td>100 %</td>
-            <td>90.000,00</td>
-        </tr>
+
         <tr>
             <td>Ristrutturazione porta Lorem</td>
             <td>90.000,00</td>
@@ -276,6 +250,29 @@
         </tr>
         </tbody>
     </table>
+
+    <div class="text-right">
+        <table class="total-price mt-3">
+            <tbody>
+            <tr>
+                <td class="text-right">Subtotale</td>
+                <td class="text-right">200.000,00 €</td>
+            </tr>
+            <tr>
+                <td class="text-right">IVA</td>
+                <td class="text-right">200.000,00 €</td>
+            </tr>
+            <tr>
+                <td class="text-right">Sconto</td>
+                <td class="text-right">200.000,00 €</td>
+            </tr>
+            <tr>
+                <td class="text-right">Totale</td>
+                <td class="text-right">200.000,00 €</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 </body>
 </html>
