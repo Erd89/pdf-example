@@ -20,12 +20,10 @@ public class PDFThymeleafExample {
         PDFThymeleafExample thymeleaf2Pdf = new PDFThymeleafExample();
         String html = thymeleaf2Pdf.parseThymeleafTemplate();
 
-
         Document doc = createWellFormedHtml(new ByteArrayInputStream(html.getBytes(StandardCharsets.UTF_8)));
         xhtmlToPdf(doc, PDF_OUTPUT);
         //thymeleaf2Pdf.generatePdfFromHtml(html);
     }
-
 
     private String parseThymeleafTemplate() {
         ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
@@ -38,7 +36,7 @@ public class PDFThymeleafExample {
         Context context = new Context();
         context.setVariable("to", "Baeldung.com");
 
-        return templateEngine.process("preventivo", context);
+        return templateEngine.process("quote", context);
     }
 
     private static Document createWellFormedHtml(InputStream inputHTML) throws IOException {
